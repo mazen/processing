@@ -2,7 +2,7 @@
     "name"        : "processing/processing",
     "type"        : "library",
     "keywords"    : ["task", "background", "process"],
-    "homepage"    : "http;//github.com/mazen/processing",
+    "homepage"    : "http://github.com/mazen/processing",
     "version"     : "0.1.0",
     "license"     : "MIT",
     "description" : "Library to asynchronously perform background jobs",
