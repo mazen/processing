@@ -1,6 +1,7 @@
 Processing
 ----------
-Processing is a php library to asynchronously queue and process background jobs within redis.
+Processing is a PHP library to asynchronously queue and process background jobs. It uses
+redis as its storage engine but provides the necessary extension points for other implementations.
 
 Features:
 
