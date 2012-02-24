@@ -35,6 +35,7 @@ class ProcessingTest extends \PHPUnit_Framework_TestCase
     {
         if (!extension_loaded('pcntl')) {
             $this->markTestSkipped('pcntl extension required');
+            return;
         }
 
         define('PHPUNIT_TESTCASE', 1);

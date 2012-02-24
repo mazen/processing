@@ -3,6 +3,8 @@ Processing
 Processing is a PHP library to asynchronously queue and process background jobs. It uses
 redis as its storage engine but provides the necessary extension points for other implementations.
 
+[![Build Status](https://secure.travis-ci.org/mazen/processing.png?branch=master)](http://travis-ci.org/mazen/processing)
+
 Features:
 
 * Written in PHP 5.3
