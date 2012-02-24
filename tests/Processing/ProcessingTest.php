@@ -44,20 +44,20 @@ class ProcessingTest extends \PHPUnit_Framework_TestCase
             ->method('pop')
             ->with(array('queue:test'), true)
             ->will($this->returnValue(array(
-                0 => 'queue:test',
-                1 => json_encode(array('job'       => 'test',
-                    'arguments' => array()))
-            )));
+            0 => 'queue:test',
+            1 => json_encode(array('job'       => 'test',
+                                   'arguments' => array()))
+        )));
 
         $processor = new Processor($conn);
 
         $invocationCount = 0;
-
         $processor->addWorker('test', 'test', function() use ($invocationCount)
         {
             $invocationCount++;
         });
         $processor->doWork();
+
         $this->assertEquals(1, $invocationCount);
 
     }

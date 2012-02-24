@@ -32,7 +32,7 @@ class Processor
      *
      * @param string|array    $queues   a list of queues this worker works on
      * @param string          $taskName name of task to perform
-     * @param callable        $callback a method to be invoked when a new item needs work
+     * @param Closure         $callback a method to be invoked when a new item needs work
      *
      * @return void
      */
