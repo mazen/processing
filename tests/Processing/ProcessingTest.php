@@ -53,7 +53,7 @@ class ProcessingTest extends \PHPUnit_Framework_TestCase
         $processor = new Processor($conn);
 
         $invocationCount = 0;
-        $processor->addWorker('test', 'test', function() use ($invocationCount)
+        $processor->addWorker('test', 'test', function() use (&$invocationCount)
         {
             $invocationCount++;
         });
